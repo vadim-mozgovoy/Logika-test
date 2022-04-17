@@ -1,0 +1,128 @@
+body {
+  background-image: url("../img/shadow frame.png");
+}
+
+.main {
+  background-image: url("../img/back.png");
+  width: 1920px;
+  height: 1080px;
+}
+
+.menu, .content, .foot {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin text-alliance {
+  font-family: 'Alliance No.1', sans-serif;
+  line-height: 36px;
+  font-size: 30px;
+  color: #959595;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+
+.deligaxy, .mixer {
+  @include text-alliance;
+  width: 324px;
+  margin: 0 22px;
+  padding: 10px 0;
+  border: 2px solid #959595;
+  background: rgba(0, 0, 0, 0.8);
+  align-self: center;
+}
+
+.rao, .arena {
+  @include text-alliance;
+  width: 326px;
+  margin: 0 22px;
+  border: 2px solid #959595;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8);
+  clip-path: polygon(20% 100%, 0% 0%, 100% 0%, 100% 100%);
+  text-align: center;
+
+  //border-top: 56px solid #2F73B6;/*высота трапеции и её фоновый цвет*/
+  //  border-left: 56px solid transparent; /*наклон левой границы*/
+  //  border-right: 0 solid transparent;/*наклон правой границы*/
+  //  height: 0; /*это значение высоты должно быть равным 0*/
+
+}
+
+.arena {
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 80% 100%);
+  color: #41E024;
+  border: 2px solid #41E024;
+  box-sizing: border-box;
+}
+
+.colum1, .colum2, .colum3 {
+  display: flex;
+  flex-flow: column;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  margin-top: 34px;
+  margin-left: 65px;
+  margin-right: 56px;
+}
+
+.hero-img {
+  z-index: 2;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+}
+
+.hero-img2 {
+  z-index: 3;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 636px;
+  left: -55px;
+}
+
+.colum1, .colum3 {
+  margin-top: 73px;
+}
+
+.silver, .gold {
+  position: relative;
+  margin-top: 8px;
+}
+
+@mixin text-b612 {
+  font-family: 'B612', sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.board-text {
+  @include text-b612;
+  position: absolute;
+  left: 66px;
+  top: 95px;
+  color: #646363;
+}
+
+.board-text-gold {
+  @include text-b612;
+  position: absolute;
+  left: 66px;
+  top: 77px;
+  color: #695409;
+}
+
+.card {
+  margin: 37px 8px;
+}
+
+
+
