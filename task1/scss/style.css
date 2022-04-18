@@ -28,7 +28,7 @@ body {
   align-self: center;
 }
 
-.rao, .arena {
+.fig, .arena {
   font-family: 'Alliance No.1', sans-serif;
   line-height: 36px;
   font-size: 30px;
@@ -114,6 +114,42 @@ body {
 
 .card {
   margin: 37px 8px;
+}
+
+.left-side {
+  width: 1px;
+  height: 60px;
+  background: #959595;
+  border: 1px solid #959595;
+  transform: skew(48deg);
+  left: 34px;
+}
+
+.fig:hover {
+  border-color: #41E024;
+}
+
+.fig:hover span {
+  color: #41E024;
+}
+
+.fig:hover .left-side {
+  background: #41E024;
+  border-color: #41E024;
+}
+
+.rao {
+  position: absolute;
+  left: 140px;
+}
+
+.left-side {
+  position: absolute;
+  top: 0;
+}
+
+.fig {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

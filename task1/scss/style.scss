@@ -34,7 +34,7 @@ body {
   align-self: center;
 }
 
-.rao, .arena {
+.fig, .arena {
   @include text-alliance;
   width: 326px;
   margin: 0 22px;
@@ -43,12 +43,6 @@ body {
   background: rgba(0, 0, 0, 0.8);
   clip-path: polygon(20% 100%, 0% 0%, 100% 0%, 100% 100%);
   text-align: center;
-
-  //border-top: 56px solid #2F73B6;/*высота трапеции и её фоновый цвет*/
-  //  border-left: 56px solid transparent; /*наклон левой границы*/
-  //  border-right: 0 solid transparent;/*наклон правой границы*/
-  //  height: 0; /*это значение высоты должно быть равным 0*/
-
 }
 
 .arena {
@@ -124,5 +118,54 @@ body {
   margin: 37px 8px;
 }
 
+.left-side {
+  width: 1px;
+  height: 60px;
+  background: #959595;
+  border: 1px solid #959595;
+  transform: skew(48deg);
+  left: 34px;
 
+}
+
+.fig:hover {
+  border-color: #41E024;
+}
+
+.fig:hover span {
+  color: #41E024;
+}
+
+.fig:hover .left-side {
+  background: #41E024;
+  border-color: #41E024;
+}
+
+.rao {
+  position: absolute;
+  left: 140px;
+
+}
+
+.left-side {
+  position: absolute;
+  top: 0;
+}
+
+.fig {
+  position: relative;
+}
+
+
+//.rao::before {
+//    content: " ";
+//    position: absolute;
+//    width: 3px;
+//    height: 230px;
+//    background: #959595;
+//    transform: skew(48deg);
+//    top: 0;
+//
+//    //left: 55px;
+//  }
 
