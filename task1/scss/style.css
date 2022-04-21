@@ -197,7 +197,7 @@ html {
   color: #41E024;
 }
 
-@media screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (min-width: 321px) and (max-width: 768px) {
   html {
     font-size: 4px;
   }
@@ -206,7 +206,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 
   .board-img {
@@ -258,7 +258,7 @@ html {
     color: #41E024;
   }
 }
-@media screen and (min-width: 569px) and (max-width: 992px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   html {
     font-size: 5px;
   }
